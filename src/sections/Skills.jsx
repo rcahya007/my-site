@@ -1,10 +1,12 @@
 import Typewriter from "typewriter-effect";
-import { AiOutlineHtml5, AiTwotoneHtml5 } from "react-icons/ai";
+
+import CardSkill from "../components/CardSkill";
+import DataGlobal from "../common/DataGlobal";
 
 const Skills = () => {
   return (
-    <div className="font-gilroy ">
-      <div className="font-bold text-[22px] z-0">
+    <div className="font-gilroy">
+      <div className="z-0 text-[22px] font-bold ">
         <Typewriter
           options={{
             strings: ["Skills", "Currently"],
@@ -15,63 +17,12 @@ const Skills = () => {
           }}
         />
       </div>
-      <div className="text-[14px] mt-[20px] flex flex-col space-y-2">
+      <div className="mt-[20px] flex flex-col space-y-2 text-[14px]">
         <p className="mb-3">My basic skills are: </p>
-        <div className="flex flex-wrap justify-center gap-10 ">
-          <div className="w-max border border-black px-[60px] py-[18px] relative group">
-            <AiOutlineHtml5
-              size={30}
-              className="group-hover:opacity-0 opacity-100 transition-all"
-            />
-            <div className="absolute left-[50%] -translate-x-[50%] group-hover:top-[50%] transition-all group-hover:-translate-y-[50%] group-hover:-translate-x-[50%] opacity-100 group-odd:top-0 group-even:bottom-0 group-hover:opacity-100 font-bold group-odd:text-green-600 group-even:text-red-600 ">
-              HTML
-            </div>
-          </div>
-          <div className="w-max border border-black px-[60px] py-[18px] relative group">
-            <AiOutlineHtml5
-              size={30}
-              className="group-hover:opacity-0 opacity-100 transition-all"
-            />
-            <div className="absolute group-odd:top-0 group-even:bottom-0 left-[50%] -translate-x-[50%] group-hover:top-[50%] transition-all group-hover:-translate-y-[50%] group-hover:-translate-x-[50%] opacity-100 group-hover:opacity-100 font-bold group-odd:text-green-600 group-even:text-red-600">
-              HTML
-            </div>
-          </div>
-          <div className="w-max border border-black px-[60px] py-[18px] relative group">
-            <AiOutlineHtml5
-              size={30}
-              className="group-hover:opacity-0 opacity-100 transition-all"
-            />
-            <div className="absolute top-0 left-[50%] -translate-x-[50%] group-hover:top-[50%] transition-all group-hover:-translate-y-[50%] group-hover:-translate-x-[50%] opacity-0 group-hover:opacity-100 font-bold">
-              HTML
-            </div>
-          </div>
-          <div className="w-max border border-black px-[60px] py-[18px] relative group">
-            <AiOutlineHtml5
-              size={30}
-              className="group-hover:opacity-0 opacity-100 transition-all"
-            />
-            <div className="absolute top-0 left-[50%] -translate-x-[50%] group-hover:top-[50%] transition-all group-hover:-translate-y-[50%] group-hover:-translate-x-[50%] opacity-0 group-hover:opacity-100 font-bold">
-              HTML
-            </div>
-          </div>
-          <div className="w-max border border-black px-[60px] py-[18px] relative group">
-            <AiOutlineHtml5
-              size={30}
-              className="group-hover:opacity-0 opacity-100 transition-all"
-            />
-            <div className="absolute top-0 left-[50%] -translate-x-[50%] group-hover:top-[50%] transition-all group-hover:-translate-y-[50%] group-hover:-translate-x-[50%] opacity-0 group-hover:opacity-100 font-bold">
-              HTML
-            </div>
-          </div>
-          <div className="w-max border border-black px-[60px] py-[18px] relative group">
-            <AiOutlineHtml5
-              size={30}
-              className="group-hover:opacity-0 opacity-100 transition-all"
-            />
-            <div className="absolute top-0 left-[50%] -translate-x-[50%] group-hover:top-[50%] transition-all group-hover:-translate-y-[50%] group-hover:-translate-x-[50%] opacity-0 group-hover:opacity-100 font-bold">
-              HTML
-            </div>
-          </div>
+        <div className="-z-0 flex flex-wrap justify-center gap-10">
+          {DataGlobal.dataSkill.map((e, i) => {
+            return <CardSkill icon={e.icon} skill={e.skill} key={i}/>;
+          })}
         </div>
       </div>
     </div>

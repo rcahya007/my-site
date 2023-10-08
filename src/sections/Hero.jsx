@@ -4,7 +4,7 @@ import HeroImage from "../assets/images/Hero.svg";
 const Hero = () => {
   return (
     <div className="font-gilroy ">
-      <div className="font-bold text-[40px] z-0">
+      <div className="z-0 text-[40px] font-bold">
         <Typewriter
           options={{
             strings: [
@@ -18,14 +18,14 @@ const Hero = () => {
           }}
         />
       </div>
-      <div className="text-[14px] mt-[20px] flex flex-col space-y-2">
+      <div className="mt-[20px] flex flex-col space-y-2 text-[14px]">
         <p>
           I'm a Junior Web ~/ Mobile Developer..., and I think that's a
           fullstack developer.
         </p>
         <p>
           Okey next, I very love doing slicing-design-to-code, I can design but,
-          just litle bit :').
+          just little bit :').
         </p>
         <p>
           <b>*Note:</b>
@@ -33,20 +33,20 @@ const Hero = () => {
           Cat lover, Badminton lover, Movie Lover, & Anime Lover.
         </p>
       </div>
-      <div className="border border-black mt-6 mb-4"></div>
-      <div className="flex justify-between h-[180px]">
+      <div className="mb-4 mt-6 border border-black"></div>
+      <div className="flex h-[180px] justify-between">
         <div className=" w-full">
           <img
             src={HeroImage}
             alt="Hero Image"
-            className="w-[155px] h-[180px] flex justify-center"
+            className="flex h-[180px] w-[155px] justify-center"
           />
         </div>
-        <div className="border border-black mx-4"></div>
-        <div className=" w-full flex items-end text-[11px] flex-col justify-end">
+        <div className="mx-4 border border-black"></div>
+        <div className=" flex w-full flex-col items-end justify-end text-[11px]">
           <p>
             Just hover and click, you can see{" "}
-            <span className="cursor-pointer underline-offset-2 underline under">
+            <span className="under cursor-pointer underline underline-offset-2">
               my portfolio
             </span>
             , and you can also see{" "}

@@ -9,44 +9,44 @@ import { useState } from "react";
 const Nav = () => {
   const [isOpen, setOpen] = useState(false);
   return (
-    <header className="sticky top-0 bg-white">
-      <nav className="border border-black flex justify-between ">
+    <header className="sticky top-0 z-10 bg-white">
+      <nav className="flex justify-between border border-black">
         <div
-          className={`transition-all duration-500 m-0 p-0 absolute bg-white w-full border border-black h-screen z-10  ${
-            isOpen ? "translate-y-0" : "-translate-y-[100%] hidden"
+          className={`absolute z-10 m-0 h-screen w-full border border-black bg-white p-0 transition-all duration-500  ${
+            isOpen ? "translate-y-0" : "-translate-y-[100%]"
           }`}
         >
           <div
-            className="px-[20px] py-[14px] border-b border-black cursor-pointer"
+            className="cursor-pointer border-b border-black px-[20px] py-[14px]"
             onClick={() => setOpen(!isOpen)}
           >
             <MdClose size={24} />
           </div>
-          <div className="p-[24px] border-b border-black">
+          <div className="border-b border-black p-[24px]">
             <p className="font-gilroy text-[18px]">Sing in</p>
           </div>
-          <div className="p-[24px] border-b border-black">
+          <div className="border-b border-black p-[24px]">
             <p className="font-gilroy text-[18px]">Shop</p>
           </div>
-          <div className="p-[24px] border-b border-black">
+          <div className="border-b border-black p-[24px]">
             <p className="font-gilroy text-[18px]">Service</p>
           </div>
-          <div className="p-[24px] border-b border-black">
+          <div className="border-b border-black p-[24px]">
             <p className="font-gilroy text-[18px]">Contact</p>
           </div>
-          <div className="p-[24px] border-b border-black">
+          <div className="border-b border-black p-[24px]">
             <p className="font-gilroy text-[18px]">About us</p>
           </div>
-          <div className="p-[24px] border-b border-black">
-            <p className="font-gilroy text-[14px] mb-[16px]">
+          <div className="border-b border-black p-[24px]">
+            <p className="mb-[16px] font-gilroy text-[14px]">
               Shipping & returns
             </p>
-            <p className="font-gilroy text-[14px] mb-[16px]">
+            <p className="mb-[16px] font-gilroy text-[14px]">
               Terms & conditions
             </p>
             <p className="font-gilroy text-[14px]">Privacy policy</p>
           </div>
-          <div className="p-[29px] border-b border-black flex justify-between">
+          <div className="flex justify-between border-b border-black p-[29px]">
             <FaInstagram size={26} />
             <ImPinterest2 size={26} />
             <FiFacebook size={26} />
@@ -55,12 +55,12 @@ const Nav = () => {
           </div>
         </div>
         <div
-          className="p-[12px] border-r border-black w-12 flex justify-center cursor-pointer"
+          className="flex w-12 cursor-pointer justify-center border-r border-black p-[12px]"
           onClick={() => setOpen(!isOpen)}
         >
           <FaBars size={24} />
         </div>
-        <div className="p-[12px] border-l border-black w-12 flex justify-center cursor-pointer">
+        <div className="flex w-12 cursor-pointer justify-center border-l border-black p-[12px]">
           <PiMoonStarsBold size={24} />
         </div>
       </nav>
