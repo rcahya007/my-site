@@ -2,7 +2,6 @@ import React from "react";
 
 const CardItemSkill = (props) => {
   var titleIcon = props.dataIcon.titleIcon;
-  console.log(titleIcon);
   return (
     <div
       className={`
@@ -34,7 +33,6 @@ const CardItemSkill = (props) => {
       opacity-0
       shadow-[1px_1px_0px_black]
       transition-all
-      duration-200
       group-hover:-translate-y-[185%] 
       group-hover:opacity-100 
       "

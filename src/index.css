@@ -2,25 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   @font-face {
     font-family: "Gilroy";
     font-weight: 400;
-    src: url("/public/fonts/Gilroy-Regular.ttf") format("gilroy-reg");
+    src: url("../public/fonts/Gilroy-Regular.ttf");
   }
   @font-face {
     font-family: "Gilroy";
     font-weight: 500;
-    src: url("/public/fonts/Gilroy-Medium.ttf") format("gilroy-med");
+    src: url("../public/fonts/Gilroy-Medium.ttf");
   }
   @font-face {
     font-family: "Gilroy";
-    font-weight: 600; 
-    src: url("/public/fonts/Gilroy-SemiBold.ttf") format("gilroy-semi");
+    font-weight: 600;
+    src: url("../public/fonts/Gilroy-SemiBold.ttf");
   }
   @font-face {
     font-family: "Gilroy";
     font-weight: 700;
-    src: url("/public/fonts/Gilroy-Bold.ttf") format("gilroy-bold");
+    src: url("../public/fonts/Gilroy-Bold.ttf");
   }
 }
