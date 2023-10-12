@@ -5,7 +5,10 @@ import HeroRight from "../assets/images/heroRight.svg";
 const Hero = () => {
   return (
     <div className="flex font-[gilroy] xl:h-full xl:w-full xl:justify-center">
-      <div className="xl:flex xl:flex-1 xl:flex-col xl:justify-center xl:px-20">
+      <div
+        className="xl:flex xl:flex-1 xl:flex-col xl:justify-center xl:border-r xl:border-black xl:px-20
+      xl:py-32"
+      >
         <div className="z-0 text-[40px] font-semibold sm:text-[67px] sm:font-normal lg:leading-none">
           <Typewriter
             options={{
@@ -59,8 +62,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="hidden xl:flex xl:w-full xl:flex-1 xl:items-center">
-        <img src={HeroRight} alt="Hero Image" className="pr-10" />
+      <div className="hidden xl:flex xl:w-full xl:flex-1 xl:items-center xl:px-20 xl:py-32">
+        <img src={HeroRight} alt="Hero Image" />
       </div>
     </div>
   );

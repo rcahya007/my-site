@@ -5,35 +5,41 @@ import { FiGithub, FiTwitter, FiYoutube } from "react-icons/fi";
 
 const ContactMe = () => {
   return (
-    <div className="flex flex-col gap-4 font-gilroy">
-      <h1 className="text-center text-[22px] font-bold text-[#808080]">
+    <div className="flex w-full flex-col items-center justify-center gap-4 font-gilroy xl:py-40">
+      <h1 className="text-center text-[22px] font-bold text-[#808080] sm:text-3xl">
         Contact me
       </h1>
-      <div className="text-center">
-        <p className="text-[14px] font-normal text-[#808080]">Address</p>
-        <p className="text-[14px] font-medium">
+      <div className="text-center sm:text-lg">
+        <p className="text-[14px] font-normal text-[#808080] sm:text-base">
+          Address
+        </p>
+        <p className="text-[14px] font-medium sm:text-base">
           <a href="https://maps.app.goo.gl/6hxd97Y7w4s2CQsH7" target="_blank">
             Joyoboyo, 19, Waru, Sidoarjo.
           </a>
         </p>
       </div>
       <div className="text-center">
-        <p className="text-[14px] font-normal text-[#808080]">Phone</p>
-        <p className="text-[14px] font-medium">
+        <p className="text-[14px] font-normal text-[#808080] sm:text-base">
+          Phone
+        </p>
+        <p className="text-[14px] font-medium sm:text-base">
           <a href="https://wa.me/6281238620212" target="_blank">
             +6281238620212
           </a>
         </p>
       </div>
       <div className="text-center">
-        <p className="text-[14px] font-normal text-[#808080]">Email</p>
-        <p className="text-[14px] font-medium">
+        <p className="text-[14px] font-normal text-[#808080] sm:text-base">
+          Email
+        </p>
+        <p className="text-[14px] font-medium sm:text-base">
           <a href="mailto:rendycahya6@gmail.com" target="_blank">
             rendycahya6@gmail.com
           </a>
         </p>
       </div>
-      <h1 className="text-center text-[22px] font-bold text-[#808080]">
+      <h1 className="text-center text-[22px] font-bold text-[#808080] sm:text-3xl">
         Follow me
       </h1>
       <div className="flex justify-center gap-6">

@@ -13,7 +13,7 @@ const Collab = () => {
     console.log("submited", data);
   };
   return (
-    <div className="text-center font-gilroy">
+    <div className="text-center font-gilroy sm:px-20 xl:px-[30%] xl:py-24">
       <div
         className="
         mb-4
