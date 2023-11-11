@@ -3,8 +3,8 @@ import Typewriter from "typewriter-effect";
 const Experience = () => {
   return (
     <div className="xl:flex xl:h-full">
-      <div className="hidden xl:flex xl:flex-1 xl:border-r xl:border-black xl:px-20 xl:py-32">
-        <p className="xl:font-gilroy xl:text-[50px] xl:font-semibold">
+      <div className="hidden xl:inline xl:w-1/2 xl:border-r xl:border-black xl:px-20 xl:py-32">
+        <p className="xl:sticky xl:top-[88px] xl:font-gilroy xl:text-[50px] xl:font-semibold">
           Experience
         </p>
       </div>

@@ -6,8 +6,10 @@ import DataGlobal from "../common/DataGlobal";
 const Skills = () => {
   return (
     <div className="font-gilroy xl:flex xl:h-full">
-      <div className="hidden  xl:flex xl:flex-1 xl:border-r xl:border-black xl:px-20 xl:pb-20 xl:pt-32">
-        <p className="xl:text-[50px] xl:font-semibold">Skil Tech</p>
+      <div className="hidden  xl:inline xl:w-1/2 xl:border-r xl:border-black xl:px-20 xl:pb-20 xl:pt-32">
+        <p className="xl:sticky xl:top-[88px] xl:text-[50px] xl:font-semibold">
+          Skil Tech
+        </p>
       </div>
       <div className=" xl:flex xl:flex-1 xl:flex-col xl:border-black xl:px-20 xl:pb-24 xl:pt-32">
         <div className="z-0 text-[22px] font-bold sm:text-4xl">

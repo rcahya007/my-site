@@ -1,7 +1,6 @@
 import React from "react";
 
 const CardItemSkill = (props) => {
-  var titleIcon = props.dataIcon.titleIcon;
   return (
     <div
       className={`

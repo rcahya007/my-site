@@ -109,7 +109,7 @@ export default class DataGlobal {
           titleIcon: "TailwindCSS",
         },
       ],
-      linkDemo: "https://aldipriyanto.rendycahyae.my.id/",
+      linkDemo: "https://aldi-priyanto.opwarnet.my.id/",
       linkSource: "https://github.com/rcahya007/aldi-priyanto",
     },
     {
@@ -132,7 +132,7 @@ export default class DataGlobal {
           titleIcon: "Javascript",
         },
       ],
-      linkDemo: "https://pokedex.rendycahyae.my.id/",
+      linkDemo: "https://pokedex.opwarnet.my.id/",
       linkSource: "https://github.com/rcahya007/Pokedex-Javascript-Native",
     },
     {
@@ -155,7 +155,7 @@ export default class DataGlobal {
           titleIcon: "Express Js",
         },
       ],
-      linkDemo: "https://notareact.rendycahyae.my.id/",
+      linkDemo: "https://notareact.opwarnet.my.id/",
       linkSource: "https://github.com/rcahya007/nota-react",
     },
     {

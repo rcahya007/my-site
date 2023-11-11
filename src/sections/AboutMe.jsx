@@ -4,8 +4,10 @@ const AboutMe = () => {
   return (
     <div className="mx-auto font-gilroy xl:flex xl:h-full ">
       {/* LEFT */}
-      <div className="hidden xl:flex xl:flex-1 xl:border-r xl:border-black xl:px-20 xl:pb-20 xl:pt-32">
-        <p className="xl:text-[50px] xl:font-semibold">About me</p>
+      <div className="hidden xl:inline xl:w-1/2 xl:border-r xl:border-black xl:px-20 xl:pb-20 xl:pt-32">
+        <p className="xl:sticky xl:top-[88px] xl:text-[50px] xl:font-semibold">
+          About me
+        </p>
       </div>
       {/* RIGHT */}
       <div className="xl:flex-1  xl:px-20 xl:pb-60 xl:pt-32">
