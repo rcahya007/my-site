@@ -1,5 +1,7 @@
 import Typewriter from "typewriter-effect";
 import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 const Collab = () => {
   const form = useForm();
@@ -9,8 +11,28 @@ const Collab = () => {
     formState: { errors },
   } = form;
   const onSubmit = (data, e) => {
-    e.target.reset();
-    console.log("submited", data);
+    e.preventDefault();
+    const serviceId = "service_l8rh5b7";
+    const templateId = "template_u45a3fo";
+    const publicKey = "YgRkjRbzqbTEj1jZp";
+
+    const templateParams = {
+      from_name: data.fullname,
+      from_email: data.email,
+      message: data.messages,
+    };
+
+    emailjs.send(serviceId, templateId, templateParams, publicKey).then(
+      (result) => {
+        e.target.reset();
+        Swal.fire(
+          "Thank you for contacting me, I'l reply as soon as possible once your message is received. :)",
+        );
+      },
+      (error) => {
+        console.log(error.text);
+      },
+    );
   };
   return (
     <div className="text-center font-gilroy sm:px-20 xl:px-[30%] xl:py-24">

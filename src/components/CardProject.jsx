@@ -15,7 +15,7 @@ const CardProject = (props) => {
           </p>
           <p>{props.data.typeProject}</p>
         </div>
-        <p>{props.data.descriptionProject}</p>
+        <p className="whitespace-pre-line">{props.data.descriptionProject}</p>
         <div className="flex gap-2">
           {props.data.tech.map((e, i) => {
             return <CardItemSkill dataIcon={e} key={i} />;

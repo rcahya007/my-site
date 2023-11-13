@@ -13,7 +13,7 @@ const App = () => {
     <main className="relative">
       <Nav />
       <section
-        className="mx-auto flex h-screen max-w-screen-2xl items-center justify-center border border-black px-[16px] py-[40px] sm:p-20 xl:h-full xl:p-0"
+        className="mx-auto flex h-screen max-w-screen-2xl items-center justify-center border border-black px-[16px] pb-[40px] pt-[80px] sm:h-screen sm:p-20 xl:h-full xl:p-0"
         id="home"
       >
         <Hero />
@@ -31,7 +31,7 @@ const App = () => {
         <Skills />
       </section>
       <section
-        className="h-screen border border-black px-[16px] py-20 sm:p-24 xl:mx-auto xl:h-full xl:max-w-screen-2xl xl:p-0"
+        className="h-full border border-black px-[16px] py-20 sm:h-full sm:p-24 xl:mx-auto xl:h-full xl:max-w-screen-2xl xl:p-0"
         id="eksperience"
       >
         <Experience />
@@ -49,7 +49,7 @@ const App = () => {
         <Collab />
       </section>
       <section
-        className="flex h-screen items-center border border-black px-[16px] py-[40px] xl:mx-auto xl:h-full xl:max-w-screen-2xl xl:p-0"
+        className="flex h-screen items-center border border-black px-[16px] py-[40px] xl:mx-auto xl:h-screen xl:max-w-screen-2xl xl:p-0"
         id="contact"
       >
         <ContactMe />

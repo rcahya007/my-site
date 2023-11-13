@@ -9,7 +9,7 @@ const Hero = () => {
         className="xl:flex xl:flex-1 xl:flex-col xl:justify-center xl:border-r xl:border-black xl:px-20
       xl:py-32"
       >
-        <div className="z-0 text-[40px] font-semibold sm:text-[42px] sm:font-black lg:leading-none">
+        <div className="z-0 text-[40px] font-semibold leading-9 sm:text-[42px] sm:font-black lg:leading-none">
           <Typewriter
             options={{
               strings: [

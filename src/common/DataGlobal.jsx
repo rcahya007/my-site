@@ -140,7 +140,7 @@ export default class DataGlobal {
       titleProject: "Nota Kodehack",
       typeProject: "Website Application",
       descriptionProject:
-        "Website for recording data, sales, goods receipts. Convert Project Nota Native Javascript to React.",
+        "Website for recording data, sales, goods receipts. Convert Project Nota Native Javascript to React. \n\n Username: coba\n Password: coba",
       tech: [
         {
           icon: SiReact,
@@ -163,7 +163,7 @@ export default class DataGlobal {
       titleProject: "Nota Kodehack",
       typeProject: "Website Application",
       descriptionProject:
-        "The website records data, sales, goods notes using Laravel-Javascript and can be printed via thermal print.",
+        "The website records data, sales, goods notes using Laravel-Javascript and can be printed via thermal print. \n\n Username: coba\n Password: coba",
       tech: [
         {
           icon: SiLaravel,
@@ -178,7 +178,7 @@ export default class DataGlobal {
           titleIcon: "Javascript",
         },
       ],
-      linkDemo: "https://nota.rendycahyae.my.id/",
+      linkDemo: "https://nota.opwarnet.my.id/",
       linkSource: "https://github.com/rcahya007/nota_thermal_laravel",
     },
   ];
