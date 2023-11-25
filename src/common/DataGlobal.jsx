@@ -12,6 +12,7 @@ import {
   SiLaravel,
   SiMysql,
   SiReact,
+  SiStrapi,
   SiTailwindcss,
 } from "react-icons/si";
 
@@ -20,6 +21,9 @@ import aldiCover from "../assets/images/aldi.png";
 import pokedexCover from "../assets/images/pokedex.png";
 import notaKodehackCover from "../assets/images/Nota Kodehack.png";
 import notaKodehack2Cover from "../assets/images/Nota Kodehack 2.png";
+import nowdots from "../assets/images/nowdots.png";
+import vape_store from "../assets/images/vape-store.png";
+import khs from "../assets/images/khs.png";
 
 export default class DataGlobal {
   static dataSkill = [
@@ -70,6 +74,71 @@ export default class DataGlobal {
   ];
 
   static dataProject = [
+    {
+      img: khs,
+      titleProject: "FIC 8 - Siakad",
+      typeProject: "Mobile Application",
+      descriptionProject:
+        "Final project from Fluter Intensive Club batch 8 Fullstack.\n\n Mobile: Flutter\n Backend: Laravel.",
+      tech: [
+        {
+          icon: SiDart,
+          titleIcon: "Dart",
+        },
+        {
+          icon: SiFlutter,
+          titleIcon: "Flutter",
+        },
+        {
+          icon: SiLaravel,
+          titleIcon: "Laravel",
+        },
+      ],
+      linkDemo: "",
+      linkSource:
+        "https://github.com/rcahya007/flutter-siakad-app/tree/meet11-student-scedule",
+    },
+    {
+      img: vape_store,
+      titleProject: "Vape Store",
+      typeProject: "Mobile Application",
+      descriptionProject:
+        "Final project from Fluter Intensive Club batch 6 Fullstack.\n\n Mobile: Flutter\n Backend: Strapi.\n Payment Gateway: Midtrans Sandbox\n\nThis is my first e-commerce application.",
+      tech: [
+        {
+          icon: SiDart,
+          titleIcon: "Dart",
+        },
+        {
+          icon: SiFlutter,
+          titleIcon: "Flutter",
+        },
+        {
+          icon: SiStrapi,
+          titleIcon: "Strapi",
+        },
+      ],
+      linkDemo: "https://youtu.be/Yzu0g2sVozk?si=Qw1lFuyU6HmFf9pm",
+      linkSource: "https://github.com/rcahya007/fic-vape-store",
+    },
+    {
+      img: nowdots,
+      titleProject: "Nowdots",
+      typeProject: "Web Application",
+      descriptionProject: "Company Profile - Nowdots",
+      tech: [
+        {
+          icon: SiReact,
+          titleIcon: "React",
+        },
+        {
+          icon: SiTailwindcss,
+          titleIcon: "TailwindCSS",
+        },
+      ],
+      linkDemo: "https://nowdots.com",
+      linkSource: "",
+    },
     {
       img: JobListCover,
       titleProject: "Job List",
