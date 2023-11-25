@@ -23,7 +23,7 @@ import notaKodehackCover from "../assets/images/Nota Kodehack.png";
 import notaKodehack2Cover from "../assets/images/Nota Kodehack 2.png";
 import nowdots from "../assets/images/nowdots.png";
 import vape_store from "../assets/images/vape-store.png";
-import khs from "../assets/images/khs.png";
+import khs from "../assets/images/Khs.png";
 
 export default class DataGlobal {
   static dataSkill = [
