@@ -24,6 +24,7 @@ import notaKodehack2Cover from "../assets/images/Nota Kodehack 2.png";
 import nowdots from "../assets/images/nowdots.png";
 import vape_store from "../assets/images/vape-store.png";
 import khs from "../assets/images/Khs.png";
+import shopco from "../assets/images/shopco.png";
 
 export default class DataGlobal {
   static dataSkill = [
@@ -74,6 +75,25 @@ export default class DataGlobal {
   ];
 
   static dataProject = [
+    {
+      img: shopco,
+      titleProject: "Shop.co",
+      typeProject: "Multi-Platform Application",
+      descriptionProject:
+        "Final project for ID Camp 2023 Multi-Platform Application Dicoding.",
+      tech: [
+        {
+          icon: SiDart,
+          titleIcon: "Dart",
+        },
+        {
+          icon: SiFlutter,
+          titleIcon: "Flutter",
+        },
+      ],
+      linkDemo: "https://shopco.opwarnet.my.id/",
+      linkSource: "https://github.com/rcahya007/shop.co",
+    },
     {
       img: khs,
       titleProject: "FIC 8 - Siakad",
